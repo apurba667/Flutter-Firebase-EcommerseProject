@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1044796291075",
+    "project_id": "traidandtrue",
+    "storage_bucket": "traidandtrue.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1044796291075:android:fe82908de4147e37f93636",
+        "android_client_info": {
+          "package_name": "com.traidandtrue.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1044796291075-ekic5n9u7qvd63j1luslu9rakhvta8rk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.traidandtrue.firebase",
+            "certificate_hash": "c0ba9446a57ffff0ecea97bd15d3425f755b69fc"
+          }
+        },
+        {
+          "client_id": "1044796291075-hho70rjsfihdjnan4agn49p75658t0fu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9eKPJm0SVzmpmPFyKyh-PvSabcOGV5sA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1044796291075-hho70rjsfihdjnan4agn49p75658t0fu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
