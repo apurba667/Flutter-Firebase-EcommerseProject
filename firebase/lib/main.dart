@@ -1,7 +1,8 @@
 import 'package:firebase/admin/adminWork.dart';
-import 'package:firebase/admin/admin_delete_update.dart';
+import 'package:firebase/admin/admin_delete_update_mobile.dart';
 import 'package:firebase/loginpage.dart';
-import 'package:firebase/screens/displaydata.dart';
+import 'package:firebase/screens/bottonav.dart';
+import 'package:firebase/screens/mobile.dart';
 import 'package:firebase/signup.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';

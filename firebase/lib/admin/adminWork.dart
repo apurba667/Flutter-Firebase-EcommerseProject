@@ -1,8 +1,10 @@
 import 'dart:ffi';
 import 'dart:io';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase/admin/admin_delete_update.dart';
+import 'package:firebase/admin/admin_delete_update_laptop.dart';
+import 'package:firebase/admin/admin_delete_update_mobile.dart';
 import 'package:firebase/admin/phone/addphone.dart';
+import 'package:firebase/admin/phone/admin_delete_update_headphone.dart';
 import 'package:firebase/admin/phone/update_phone.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_storage/firebase_storage.dart';
@@ -39,8 +41,20 @@ class _AdminWordState extends State<AdminWork> {
                   ));
                 },
                 child: Text("Mobile")),
-            ElevatedButton(onPressed: () {}, child: Text("Laptop")),
-            ElevatedButton(onPressed: () {}, child: Text("Phones"))
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => LaptopInsertDeleteUpdate(),
+                  ));
+                },
+                child: Text("Laptop")),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => HeadphoneInsertUpdateDelete(),
+                  ));
+                },
+                child: Text("Headphone"))
           ],
         ),
       ),

@@ -48,7 +48,7 @@ class _SignUpState extends State<SignUp> {
                   ),
                   CircleAvatar(
                     backgroundColor: Colors.grey,
-                    radius: 45,
+                    radius: 40,
                     backgroundImage: AssetImage("img/profile1.png"),
                   )
                 ],

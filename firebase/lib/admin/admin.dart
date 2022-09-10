@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase/admin/adminWork.dart';
-import 'package:firebase/admin/admin_delete_update.dart';
+import 'package:firebase/admin/admin_delete_update_mobile.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -77,12 +77,11 @@ class _AdminPanelState extends State<AdminPanel> {
                 ),
                 ElevatedButton(
                     onPressed: () {
-                      if (data["email"] == _emailController.text) {
-                        if (data["password"] == _passwordController.text) {
-                          Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => AdminWork(),
-                          ));
-                        }
+                      if (data["email"] == _emailController.text &&
+                          data["password"] == _passwordController.text) {
+                        Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => AdminWork(),
+                        ));
                       } else {
                         showDialog(
                             context: context,
@@ -95,7 +94,7 @@ class _AdminPanelState extends State<AdminPanel> {
                                       onPressed: () {
                                         Navigator.of(context)
                                             .push(MaterialPageRoute(
-                                          builder: (context) => AdminWork(),
+                                          builder: (context) => AdminPanel(),
                                         ));
                                       },
                                       child: Text("OK"))

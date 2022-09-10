@@ -1,5 +1,6 @@
 import 'package:firebase/admin/admin.dart';
-import 'package:firebase/screens/displaydata.dart';
+import 'package:firebase/screens/bottonav.dart';
+import 'package:firebase/screens/mobile.dart';
 import 'package:firebase/signup.dart';
 import 'package:firebase/welcome.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -26,7 +27,7 @@ class _LoginPageState extends State<LoginPage> {
       var authCredential = userCredential.user;
       if (authCredential!.uid.isNotEmpty) {
         Navigator.of(context).push(MaterialPageRoute(
-          builder: (context) => DisplayData(),
+          builder: (context) => BottomNav(),
         ));
       } else {
         showDialog(
